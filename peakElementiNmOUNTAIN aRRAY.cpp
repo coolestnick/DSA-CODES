@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int mountain(int arr,int size){
+int mountain(int arr[],int size){
     int s=0,e=size-1;
     int mid=s+(e-s)/2;
     while(s<e){
@@ -17,7 +17,7 @@ int mountain(int arr,int size){
     return s;
 }
 int main(){
-    int arr[4]={3,4,5,1};
-    cout<<"The index is "<<mountain(arr,4)<<endl;
+    int arr[5]={5,8,10,12,1};
+    cout<<"The index is of pear element is "<<mountain(arr,4)<<endl;
     return 0;
 }
